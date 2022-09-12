@@ -1,0 +1,191 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../weather/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../weather/fonts/Montserrat-Bold.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Montserrat-Regular;
+}
+body {
+    background-color: rgb(161 182 193);
+}
+.wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 70px auto 0;
+    background-image: url(../weather/img/mountains-1.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 20px;
+}
+.background {
+    width: 90%;
+    background-color: rgb(254 254 254 / 29%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.background .today-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+}
+.background .today-container .city {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30%;
+    align-items: center;
+}
+.background .today-container .city > img:hover {
+    -webkit-transform: rotateZ(50deg);
+    -ms-transform: rotateZ(50deg);
+    transform: rotateZ(50deg);
+    cursor: pointer;
+}
+
+.background .today-container .city span {
+    font-size: 40px;
+}
+
+.background .today-container .weather-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+.background .today-container .weather-container .info-row-first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: self-end;
+}
+.background .today-container .weather-container .info-row-first > div{
+    display: flex;
+    flex-direction: column;
+}
+.background .today-container .weather-container .info-row-first .date-container .time > span {
+    font-size: 85px;
+}
+
+.background .today-container .weather-container .info-row-first .temp-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.background .today-container .weather-container .info-row-first .temp-container .temp > span {
+    font-size: 90px;
+}
+.background .today-container .weather-container .info-row-first .temp-container .max-min-temp > span {
+    display: flex;
+    justify-content: center;
+}
+
+.background .today-container .weather-container .info-row-second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.background .today-container .weather-container .info-row-second .temp-fills, .humidity, .wind-speed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.background .today-container .weather-container .info-row-second .humidity, .temp-fills, .wind-speed {
+    justify-content: center;
+}
+.background .today-container .weather-container .info-row-second .humidity img {
+    margin:0 10px 0 40px;
+}
+
+.background .today-container .weather-container .info-row-second .wind-speed img {
+    margin: 0 10px 0 100px;
+}
+.background .today-container .weather-container .info-row-second .temp-fills .temp {
+   margin-left: 7px;
+}
+.background .week-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20%;
+    margin-bottom: 25px;
+}
+.background .week-container .day-container {
+    display: flex;
+    flex-direction: column;
+}
+.background .week-container .day-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.background .week-container .day-container > div > span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.background .search-location-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.background .search-location-container .search {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.background .search-location-container .search .search-input {
+    background-color: rgb(254 254 254 / 14.5%);
+    border: 3px solid #5151E5;
+    border-radius: 25px;
+}
+.background .search-location-container .search input::placeholder {
+    color: rgba(255,255,255,0.5);
+    font-size: 20px;
+    text-align: center;
+}
+.background .search-location-container .search img {
+    cursor: pointer;
+    position: absolute;
+    right: 41px;
+    bottom: 11px;
+
+}
+.background .search-location-container .btn{
+    border: 3px solid #5151E5;
+    border-radius: 25px;
+    background-color: rgb(254 254 254 / 14.5%);
+    width: 35%;
+}
+
+.background .search-location-container .btn span {
+    color: rgba(255,255,255,0.5);
+    font-size: 20px;
+    text-align: center;
+}
+.background .search-location-container span:hover {
+    color: white;
+}
+
+.background .search-location-container .btn:hover {
+    cursor: pointer;
+    -webkit-transform: scale(0.94);
+    -ms-transform: scale(0.94);
+    transform: scale(0.94);
+}
