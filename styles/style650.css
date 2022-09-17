@@ -3,6 +3,10 @@
         font-size: 25px;
     }
 
+    .wrapper {
+        width: 100%;
+        margin: 0;
+    }
     .background .today-container .weather-container .info-row-first {
         flex-direction: column;
         align-items: center;
@@ -27,6 +31,9 @@
     .background .today-container .weather-container .info-row-first .temp-container .temperature > span {
         font-size: 80px;
     }
+    .background .today-container .weather-container .info-row-second > div {
+        margin-bottom: 5px;
+    }
     .background .today-container .weather-container .info-row-second .humidity img {
         margin: 0;
     }
@@ -39,6 +46,9 @@
     .background .search-location-container {
         display: flex;
         flex-direction: column;
+    }
+    .background .search-location-container .search {
+        margin-bottom: 10px;
     }
     .background .search-location-container .search > input {
         width: 100%;
