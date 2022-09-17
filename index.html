@@ -6,111 +6,114 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style885.css">
+    <link rel="stylesheet" href="styles/style650.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="background">
-            <div class="today-container">
-                <div class="city">
-                    <span>Kyiv</span>
-                    <img src="../weather/img/updates.png" alt="reset" id="reset">
-                </div>
-                <div class="weather-container">
-                    <div class="info-row-first">
-                        <div class="date-container">
-                            <div class="time">
-                                <span>01:09</span>
-                            </div>
-                            <div class="date">
-                                <span>Wed, 31 Aug 2022</span>
-                            </div>
-                        </div>
-                        <div class="weather-icon-container">
-                            <img height="145px" src="../weather/img/cloudy-sun.png" alt="weather-icon">
-                            <span>Mostly Cloudy</span>
-                        </div>
-                        <div class="temp-container">
-                            <div class="temp">
-                                <span>20&#176;</span>
-                            </div>
-                            <div class="max-min-temp">
-                                <span>28&#176/18&#176</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-row-second">
-                        <div class="humidity">
-                            <img height="40px" src="../weather/img/hygrometer.png" alt="humidity">
-                            <span>59%</span>
-                        </div>
-                        <div class="wind-speed">
-                            <img height="40px" src="../weather/img/wind.png" alt="wind">
-                            <span>5 m/s</span>
-                        </div>
-                        <div class="temp-fills">
-                            <span>Feels like:</span>
-                            <span class="temp">25&#176;</span>
-                        </div>
-                    </div>
-                </div>
+<div class="wrapper">
+    <div class="background">
+        <div class="today-container">
+            <div class="city">
+                <span class="city-span"></span>
+                <img src="../weather/img/updates.png" alt="reset" id="reset">
             </div>
-            <div class="week-container">
-                <div class="day-container">
-                    <div class="day">
-                        <span>tue</span>
+            <div class="weather-container">
+                <div class="info-row-first">
+                    <div class="date-container">
+                        <div class="time">
+                            <span class="time-span"></span>
+                        </div>
+                        <div class="date">
+                            <span class="date-span"></span>
+                        </div>
                     </div>
-                    <div class="day-icon">
-                        <img height="50x" src="../weather/img/cloudy-sun.png" alt="day-icon">
+                    <div class="weather-icon-container">
+                        <img height="130px" alt="weather-icon" id="today-weather-icon">
+                        <span class = "weather-icon-span"></span>
                     </div>
-                    <div class="temp">
-                        <span>28&#176;</span>
-                    </div>
-                </div>
-                <div class="day-container">
-                    <div class="day">
-                        <span>tue</span>
-                    </div>
-                    <div class="day-icon">
-                        <img height="50x" src="../weather/img/cloudy-sun.png" alt="day-icon">
-                    </div>
-                    <div class="temp">
-                        <span>28&#176;</span>
-                    </div>
-                </div>
-                <div class="day-container">
-                    <div class="day">
-                        <span>tue</span>
-                    </div>
-                    <div class="day-icon">
-                        <img height="50x" src="../weather/img/cloudy-sun.png" alt="day-icon">
-                    </div>
-                    <div class="temp">
-                        <span>28&#176;</span>
+                    <div class="temp-container">
+                        <div class="temperature">
+                            <span class="temperature-span"></span>
+                        </div>
+                        <div class="max-min-temp">
+                            <span class="max-temp"></span>
+                            <span class="min-temp"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="day-container">
-                    <div class="day">
-                        <span>tue</span>
+                <div class="info-row-second">
+                    <div class="humidity">
+                        <img height="40px" src="../weather/img/hygrometer.png" alt="humidity" class="humidity-img">
+                        <span class="humidity-span"></span>
                     </div>
-                    <div class="day-icon">
-                        <img height="50x" src="../weather/img/cloudy-sun.png" alt="day-icon">
+                    <div class="wind-speed">
+                        <img height="40px" src="../weather/img/wind.png" alt="wind" class="wind-speed-img">
+                        <span class="wind-speed-span"></span>
                     </div>
-                    <div class="temp">
-                        <span>28&#176;</span>
+                    <div class="temp-feels">
+                        <span>Feels like:</span>
+                        <span class="temp-feels-span"></span>
                     </div>
                 </div>
-            </div>
-            <div class="search-location-container">
-                <div class="search">
-                    <input type="search" id="search-input" class="search-input" placeholder="Enter a city">
-                    <img src="../weather/img/search.png" alt="search">
-                </div>
-                <button class="btn">
-                    <span>Current Location</span>
-                </button>
             </div>
         </div>
+        <div class="week-container">
+            <div class="day-container">
+                <div class="day">
+                    <span class="day-span"></span>
+                </div>
+                <div class="day-icon">
+                    <img height="50px" alt="day-icon" class="day-icon-img">
+                </div>
+                <div class="temp">
+                    <span class="temp-span"></span>
+                </div>
+            </div>
+            <div class="day-container">
+                <div class="day">
+                    <span class="day-span"></span>
+                </div>
+                <div class="day-icon">
+                    <img height="50x" alt="day-icon" class="day-icon-img">
+                </div>
+                <div class="temp">
+                    <span class="temp-span"></span>
+                </div>
+            </div>
+            <div class="day-container">
+                <div class="day">
+                    <span class="day-span"></span>
+                </div>
+                <div class="day-icon">
+                    <img height="50x"  alt="day-icon" class="day-icon-img">
+                </div>
+                <div class="temp">
+                    <span class="temp-span"></span>
+                </div>
+            </div>
+            <div class="day-container">
+                <div class="day">
+                    <span class="day-span"></span>
+                </div>
+                <div class="day-icon">
+                    <img height="50x" alt="day-icon" class="day-icon-img">
+                </div>
+                <div class="temp">
+                    <span class="temp-span"></span>
+                </div>
+            </div>
+        </div>
+        <div class="search-location-container">
+            <div class="search">
+                <input type="search" id="search-input" class="search-input" placeholder="Enter a city">
+                <img src="../weather/img/search.png" alt="search" class="loupe">
+            </div>
+            <button class="btn">
+                <span>Current Location</span>
+            </button>
+        </div>
     </div>
+</div>
+<script src="main.js"></script>
 </body>
-</html>
