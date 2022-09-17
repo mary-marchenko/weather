@@ -1,0 +1,17 @@
+@media (max-width: 885px) {
+    * {
+        font-size: 18px;
+    }
+    /*.background .today-container .weather-container .info-row-first > div {*/
+    /*    align-items: center;*/
+    /*}*/
+    .background .today-container .weather-container .info-row-first .date-container .time > span {
+        font-size: 50px;
+    }
+    .background .today-container .weather-container .info-row-first .temp-container .temperature > span {
+        font-size: 50px;
+    }
+    .background .today-container .weather-container .info-row-first .weather-icon-container img {
+        height: 75px;
+    }
+}
