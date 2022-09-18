@@ -1,47 +1,55 @@
 @media (max-width: 650px) {
-    * {
-        font-size: 25px;
-    }
-
     .wrapper {
         width: 100%;
         margin: 0;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .background .today-container {
+        height: 60%;
+    }
+    .background .today-container .weather-container, .week-container {
+        margin-bottom: 20%;
+    }
+    .background .week-container {
+        height: 30%;
     }
     .background .today-container .weather-container .info-row-first {
         flex-direction: column;
         align-items: center;
         margin-bottom: 20px;
     }
+    .background .today-container .weather-container .info-row-first div {
+        align-items: center;
+    }
 
-    .background .today-container .weather-container .info-row-second {
-        flex-direction: column;
+    .background .today-container .weather-container .info-row-first .date-container .time {
         align-items: center;
     }
     .background .today-container .weather-container .info-row-first .date-container .time > span {
-        font-size: 80px;
+        font-size: 45px;
     }
     .background .today-container .weather-container .info-row-first .weather-icon-container img {
-        height: 140px;
-    }
-
-    .background .today-container .weather-container .info-row-first .date-container {
-        margin-bottom: 20px;
+        height: 100px;
     }
 
     .background .today-container .weather-container .info-row-first .temp-container .temperature > span {
-        font-size: 80px;
+        font-size: 40px;
     }
     .background .today-container .weather-container .info-row-second > div {
         margin-bottom: 5px;
     }
     .background .today-container .weather-container .info-row-second .humidity img {
         margin: 0;
+        height: 25px;
     }
     .background .today-container .weather-container .info-row-second .wind-speed img {
         margin: 0;
+        height: 25px;
     }
     .background .today-container .weather-container .info-row-second .humidity img {
         margin: 0;
+        height: 25px;
     }
     .background .search-location-container {
         display: flex;
