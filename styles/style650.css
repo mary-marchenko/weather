@@ -64,4 +64,7 @@
     .background .search-location-container .btn {
         width: 100%;
     }
+    .background .search-location-container .search img {
+        z-index: 99;
+    }
 }
