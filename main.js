@@ -138,11 +138,12 @@ function choiceIcon(id) {
     return attributeImg;
 }
 
-loupe.addEventListener("click",getNewRequest())
+
 searchCity.addEventListener("keydown", function(e) {
     if (e.code == "Enter") {
         getNewRequest()
     }
+    loupe.addEventListener("click", getNewRequest);
 })
 reset.addEventListener("click", function() {
     getNewRequest();
@@ -172,7 +173,8 @@ function handleError(error) {
         case 3:
             alert("Истекло доступное время ожидания.");
             break;
-        }
+    }
 }
 
 showCurrentTime()
+getNewRequest("Киев");
